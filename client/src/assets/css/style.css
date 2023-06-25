@@ -1,0 +1,372 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300&family=Tsukimi+Rounded:wght@500&display=swap');
+
+.success-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+  height: 50px;
+  border: solid 2px rgb(2, 74, 2);
+  border-radius: 5px;
+  margin-bottom: 15px;
+
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+  color: green;
+  background-color: rgba(50, 205, 50, 0.5);
+  animation: fadeOut 2s 3s forwards;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.image-box {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 7px;
+}
+
+.image-box input {
+  width: 415px;
+}
+
+
+.product-image {
+  width: 150px;
+  height: 150px;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  text-align: center;
+  border: solid 2px black;
+  border-radius: 5px;
+  width: 700px;
+}
+
+.produit {
+  display: flex;
+  background-color: lightgray;
+
+  margin: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: solid 1px black;
+  border-radius: 5px;
+}
+
+.produit h3 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  letter-spacing: 1px;
+  
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.produit-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.produit-info p {
+  margin-bottom: 0px;
+}
+
+.produit-description {
+  display: flex;
+  gap: 10px;
+  white-space: pre-wrap;
+}
+
+.produit-description p {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.pourx {
+  display: flex;
+  flex-direction: row;
+
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.pourx svg {
+  width: 22px;
+  height: 22px;
+}
+
+.delete, .modifier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  width: 60px;
+  height: 60px;
+
+  cursor: pointer;
+}
+
+.modifier img {
+  width: 36px;
+  fill: white;
+}
+
+.delete {
+  background-color: #d9381e;
+}
+
+.modifier {
+  background-color: rgb(126, 187, 34);
+}
+
+.modif-supprimer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+
+  margin-left: 15px;
+  margin-right: 5px;
+}
+
+/* ========= Header =========== */
+
+h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  letter-spacing: 2px;
+  font-size: 48px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* ========== Button ========== */
+
+.bouton-edit {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.button-add {
+  text-align: center;
+  border-radius: 5px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 26px;
+  background-color: cornflowerblue;
+
+  margin-top: 40px;
+
+  padding: 5px 15px;
+  height: 40px;
+  width: 100px;
+
+  cursor: pointer;
+}
+
+.button-ajouter, .button-annuler, .button-supprimer {
+  text-align: center;
+  border-radius: 5px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 26px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  padding: 5px 15px;
+  height: 40px;
+  width: 200px;
+}
+
+.button-ajouter {
+  background-color: rgb(126, 187, 34);
+  margin-bottom: 0;
+}
+
+.button-annuler, .button-supprimer {
+  background-color: #d9381e;
+  margin-bottom: 0;
+}
+
+/* ========== form ========== */
+
+.add-form {
+  margin-top: 0px;
+  border: solid 1px black;
+  border-radius: 5px;
+
+  margin: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-image: url('../img/background_creation.png');
+}
+
+.complete-form {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.left-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.produit-box, .prix-box, .categorie-box {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.produit-box label, .prix-box label, .categorie-box label {
+  margin-right: 5px;
+}
+
+input {
+  flex-grow: 1;
+}
+
+.textarea-wrapper textarea {
+  white-space: pre-wrap;
+}
+
+/* ========== Modal ========== */
+
+/* Overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  z-index: 9999; /* Ensure the modal appears on top of other content */
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  width: 560px;
+  max-width: 90%;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+  z-index: 10000; /* Ensure the modal appears on top of the overlay */
+}
+
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+dialog {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+/* ========== layout ========== */
+
+.header-menu,
+footer {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+
+    /* background-color: #009879; */
+    background-color: #992800;
+
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    letter-spacing: 3px;
+}
+
+.header-menu {
+    margin-bottom: 50px;
+    justify-content: space-evenly;
+}
+
+footer {
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+
+.header-menu a {
+    color: white;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.header-menu a:hover {
+    color: lightgrey;
+}
+
+.logo p {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.logo {
+  text-align: center;
+}
